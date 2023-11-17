@@ -1,0 +1,253 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+:root{    
+    --bg:black;
+    --pallete1:rgba(221, 151, 20, 0.912);
+    --pallete2:white;
+}
+body{
+    background-color: var(--bg);
+}
+
+.navbar {
+    display: flex;
+    justify-content:flex-end;
+    /* padding: 20px; */
+    background-color: rgba(0, 0, 0, 0.44);
+    align-items:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height:4.8rem;
+}
+
+.navbar .navbar-judul{
+    font-size:2rem;
+    font-weight:bolder;
+    color: var(--pallete1);
+    font-style:normal;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.navbar .navbar-item a{
+    color: var(--pallete2);
+    font-size: 1.3rem;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+.navbar .navbar-item a:hover{
+    color: var(--pallete2);
+    font-weight: bold;
+}
+
+/* HOME */
+.utama{
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    background-image: url(Photo/ramen-home.jpg);
+    /* width: auto; */
+    background-size:35rem;
+    background-position:right;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.konten{
+    margin-left: 3rem;
+}
+.konten h1 pre{
+    height: 15rem;
+    font-size: 80px;
+    color: var(--pallete1);
+}
+.konten p{
+    color:var(--pallete2);
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 200;
+    height: 30px;
+}
+.konten h6 pre{
+    color:var(--pallete2);
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    height: 9rem;
+}
+
+.butmenu{
+    color: var(--pallete2);
+    background-color: var(--pallete1);
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    height: 3.7rem;
+    width: 12rem;
+    text-align:center;
+}
+
+.about{
+    min-height: 110vh;
+    display:flex;
+    align-items:last baseline;
+    background-image: url(Photo/ramen\ kitchen.jpg);
+    width: auto;
+    background-size:cover;
+    background-position:center;
+    position: relative;
+} 
+.about h1{
+    margin-left: 3rem;
+    color: var(--pallete2);
+    font-size: 57px;
+    height: 10rem;
+}
+.about p{
+    margin-left: 3rem;
+    color:white;
+    font-size: 25px;
+    height: 6.5rem;
+    margin-right: 15rem;
+    font-weight: 450;
+}
+
+.chef{
+    max-height: 100vh;
+}
+.chef h1{
+    text-align: center;
+    color: var(--pallete1);
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+.chef p{
+    text-align: left;
+    color: var(--pallete2);
+    margin-left: 13rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    height: 8rem;
+    font-weight: 450;
+    font-size: 1.5rem;
+}
+
+img{
+    height: auto;
+    width: 100%;
+    background-color:var(--pallete2);
+   
+}
+.container{
+    width: 400px;
+    transform:translate(-50%, -105%) ;
+    top: -10%;
+    left: 50%;
+    overflow: hidden;
+    border: 5px solid #fcfcfc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 10px 25px 30px rgb(31, 28, 28);
+    margin-left: 70%;
+}
+
+.potchef{
+    width: auto;
+    display:flex;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+.menu{
+    background-image: url(Photo/ambience\ ramen.jpg);
+    min-height: 100vh;
+    /* display:flex; */
+    /* align-items:last baseline; */
+    width: auto;
+    background-size:cover;
+    background-position:center;
+    /* position: relative; */
+}
+
+.menu h1{
+    text-align: center;
+    color: var(--pallete1);
+    font-weight:bold;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    padding-top: 2.8rem;
+}
+.menu p{
+    text-align: center;
+    color: var(--pallete2);
+    /* margin-left: 10rem; */
+    /* margin-top: 1rem; */
+    /* padding-bottom: 3rem; */
+    height: 5vh;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.lokasi .gmap{
+    background-image: url(Photo/shop1.jpg);
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    width: auto;
+    /* height: auto; */
+    background-size:cover;
+    background-position:center;
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+
+.lokasi h1{
+    color: var(--pallete1);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+
